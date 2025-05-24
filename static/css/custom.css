@@ -1,0 +1,97 @@
+/* Custom styles for the vehicle booking system */
+
+/* Vehicle card styling */
+.vehicle-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.vehicle-feature {
+    background-color: var(--bs-dark);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* Booking calendar styling */
+.booking-calendar .flatpickr-day.selected,
+.booking-calendar .flatpickr-day.startRange,
+.booking-calendar .flatpickr-day.endRange,
+.booking-calendar .flatpickr-day.selected.inRange,
+.booking-calendar .flatpickr-day.startRange.inRange,
+.booking-calendar .flatpickr-day.endRange.inRange,
+.booking-calendar .flatpickr-day.selected:focus,
+.booking-calendar .flatpickr-day.startRange:focus,
+.booking-calendar .flatpickr-day.endRange:focus {
+    background: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.booking-calendar .flatpickr-day.inRange,
+.booking-calendar .flatpickr-day.prevMonthDay.inRange,
+.booking-calendar .flatpickr-day.nextMonthDay.inRange {
+    background: var(--bs-primary-rgb, 0.1);
+    border-color: transparent;
+}
+
+/* Status badges */
+.status-pending {
+    background-color: var(--bs-warning);
+}
+
+.status-confirmed {
+    background-color: var(--bs-success);
+}
+
+.status-completed {
+    background-color: var(--bs-info);
+}
+
+.status-cancelled {
+    background-color: var(--bs-danger);
+}
+
+/* Hero section on homepage */
+.hero-section {
+    background-color: var(--bs-dark);
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+/* Admin dashboard cards */
+.dashboard-card {
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 0;
+    }
+    
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
