@@ -39,11 +39,7 @@ A web application for managing vehicle bookings, built with Flask and SQLAlchemy
 
 2. **Install dependencies:**
    ```sh
-   pip install -r requirements.txt
-   ```
-   Or, if using Poetry:
-   ```sh
-   poetry install
+   pip install flask-login flask-sqlalchemy flask-wtf email-validator psycopg2-binary sqlalchemy wtforms
    ```
 
 3. **Set environment variables (optional):**
@@ -52,7 +48,7 @@ A web application for managing vehicle bookings, built with Flask and SQLAlchemy
 
 4. **Run the application:**
    ```sh
-   python app.py
+   python main.py
    ```
 
 ## Usage
